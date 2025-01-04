@@ -11,11 +11,21 @@ class Atleta {
   }
 
   calculaCategoria() {
-    if (this.idade >= 9 && this.idade <= 11) return "Infantil";
-    if (this.idade >= 12 && this.idade <= 13) return "Juvenil";
-    if (this.idade >= 14 && this.idade <= 15) return "Intermediário";
-    if (this.idade >= 16 && this.idade <= 30) return "Adulto";
-    return "Sem categoria";
+    if (this.idade >= 9 && this.idade <= 11){
+      return "Infantil";
+    } 
+    if (this.idade >= 12 && this.idade <= 13){
+return "Juvenil";
+    }
+    if (this.idade >= 14 && this.idade <= 15) {
+return "Intermediário";
+    }
+    if (this.idade >= 16 && this.idade <= 30) {
+      return "Adulto";
+    }
+    else{
+      return "Sem categoria";
+    }
   }
 
   calculaIMC() {
@@ -27,7 +37,7 @@ class Atleta {
     let notasComputadas = notasOrdenadas.slice(1, 4);
     return notasComputadas.reduce((soma, nota) => soma + nota, 0) / notasComputadas.length;
   }
-
+  
   obtemNomeAtleta() {
     return this.nome;
   }
