@@ -15,7 +15,7 @@ Aplicação JavaScript para calcular parâmetros de atletas, incluindo categoria
 - JavaScript 
 
 # Autor
-[Yane Brito] (link para perfil GitHub)
+[Yane Brito] (https://github.com/yaneale/dados-atleta.git)
 
 # Licença
 MIT
